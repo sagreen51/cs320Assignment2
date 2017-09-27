@@ -1,0 +1,8 @@
+#include <stdin>
+
+void main () {
+
+
+
+
+}
