@@ -10,6 +10,8 @@ void main (){
 	char *output;
 	char temp[MAX_STR_SIZE];
 
+	printf("Asignment 2-1, Steven Green, s.a.green51@gmail.com\n");
+
 	fgets(input,MAX_STR_SIZE,stdin);
 
 	input[(strlen(input)-1)] =  ' ';
@@ -27,7 +29,7 @@ void main (){
 		if (tempLength > j){
 			strncpy(temp,output,j);
 			tempLength = j;
-			temp[65] =NULL;
+			temp[65] = NULL;
 		}
 		else strcpy(temp,output);
 
