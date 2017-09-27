@@ -10,7 +10,7 @@ void main (){
 	char *output;
 	char temp[MAX_STR_SIZE];
 
-	printf("Asignment 2-1, Steven Green, s.a.green51@gmail.com\n");
+	printf("Asignment2-1,StevenGreen,s.a.green51@gmail.com\n");
 
 	fgets(input,MAX_STR_SIZE,stdin);
 
