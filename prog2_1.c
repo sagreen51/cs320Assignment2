@@ -29,7 +29,7 @@ void main (){
 		if (tempLength > j){
 			strncpy(temp,output,j);
 			tempLength = j;
-			temp[j-1] = '\0';
+			temp[j] = '\0';
 		}
 		else strcpy(temp,output);
 
