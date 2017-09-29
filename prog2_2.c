@@ -28,25 +28,22 @@ void main (){
         if (input[i] == '\n' || input[i] == '\0') break;
         if (input[i] != ' '){
             charCounter++;            
-            
-            if (input[i] == '1' ||input[i] == '2' ||input[i] == '3' ||input[i] == '4' ||input[i] == '5' ||input[i] == '6' ||input[i] == '7' ||input[i] == '8'||input[i] == '9'){
-                j = i;           
-                if (!isdigit(input[j+1])){
-                printf("STR ");
-                continue;
-                }     
-                while(input[j] != ' ')j++;
-                charCounter+=j-i;
-                i = j;
-                printf("INT "); 
+            if (isdigit(input[i])){
+                if (isdigit(input[i+1])||input[i+1] == ' '){
+                    printf("INT ");          
+                    j = i;                
+                    while(input[j] != ' ')j++;
+                    charCounter+=j-i;
+                    i = j;
+                }
             }
-            else{
-                j = i;                
-                while(input[j] != ' ')j++;
-                charCounter+=j-i;
-                i = j;
-                printf("STR ");
-            }           
+                else{
+                    j = i;                
+                    while(input[j] != ' ')j++;
+                    charCounter+=j-i;
+                    i = j;
+                    printf("STR ");
+                }
         }
     }
 }
