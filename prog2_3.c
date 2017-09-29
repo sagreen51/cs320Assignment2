@@ -26,7 +26,7 @@ for(;;){
 
         int charCounter = 0;  
         int j;    
-  
+        if (input[0] == ' ')wordCount = 3;
         if (input[i] != ' '){
             charCounter++;            
             if (isdigit(input[i])){
