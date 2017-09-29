@@ -31,6 +31,10 @@ for(;;){
         if (input[i] == '\n' || input[i] == '\0') {            
             break;
         }
+        if (input[0] == ' ') {
+            wordCount =3;
+            break;
+           }
         if (input[i] != ' '){
             charCounter++;            
             if (isdigit(input[i])){
