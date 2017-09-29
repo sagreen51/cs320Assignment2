@@ -28,11 +28,14 @@ for(;;){
         int j;    
   
         if (charCounter == 65)break;
-        if (input[i] == '\n' || input[i] == '\0') break;
+        if (input[i] == '\n' || input[i] == '\0') {
+            wordCount =3;            
+            break;
+        }
         if (input[i] != ' '){
             charCounter++;            
             if (isdigit(input[i])){
-                if (isdigit(input[i+1])||input[i+1] == ' '){
+                if (isdigit(input[i+1])||input[i+1] == ' '|| input[i+1] == '\0' ){
                   //  printf("INT ");          
                     j = i;                
                     while(input[j] != ' ')j++;
@@ -55,6 +58,7 @@ for(;;){
     }
         if (wordCount > 2) printf("ERROR! Incorrect number of tokens found\n");            
         else  printf("%s\n",output);
+        for (int i = 0; i < strlen(output); i++) output[i] = '\0';
 }
 }
 
