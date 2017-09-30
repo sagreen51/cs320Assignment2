@@ -24,7 +24,7 @@ for(;;){
     charCounter = 0; 
     numChar = 0;
     
-    if(input[0] == 'q' ||input[0] == 'Q' )if(input[1] == 'U'||input[1] == 'u')if( input[2] == 'i'||input[2] == 'I')if(input[3] == 't'||input[3] == 'T' ) break;
+    if(input[0] == 'q' ||input[0] == 'Q' )if(input[1] == 'U'||input[1] == 'u')if( input[2] == 'i'||input[2] == 'I')if(input[3] == 't'||input[3] == 'T' ) if (input[strlen(input)]== '\0' )break;
         
     for (int p = 0; p <length; p++) numChar++; 
 
