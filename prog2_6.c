@@ -15,7 +15,7 @@ void main (int argc, char *argv[]){
 	printf("Assignment #2-6, Steven Green, s.a.green51@gmail.com\n");
 
 for(;;){
-   // if (counter == 4) break;
+    if (counter == 3) break;
 
      if(argc>2||argc == 1) {
         printf("ERROR! Program 6 accepts 1 command line argument.\n");
@@ -100,6 +100,6 @@ for(;;){
             }        
         else  printf("%s\n",output);
         for (int y = 0; y < 7; y++) output[y] = '\0';
-   //     counter++;
+        counter++;
 }
 }
