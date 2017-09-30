@@ -8,8 +8,9 @@ void main (int argc, char *argv[]){
 
 	char input[MAX_STR_SIZE];
 	char output[MAX_STR_SIZE];
+	char finish[MAX_STR_SIZE];
     char *temp;
-    int length, numWords, charCounter, numChar, j,r, k;
+    int length, numWords, charCounter, numChar, j,r,k   ;
     int counter = 0;    
 
 	printf("Assignment #2-6, Steven Green, s.a.green51@gmail.com\n");
@@ -23,13 +24,13 @@ for(;;){
     else if (argc == 2){
            temp = argv[1];
            if (temp[0] == '0') return;
-           else k = temp[0];
+           k =  temp[0];
     }
     else{
         printf("ERROR! Expected integer argument.\n");
         return;    
         }
-    if (counter == k) return;
+    if (counter == k-48) return;
     printf("> ");
     fgets(input,MAX_STR_SIZE,stdin);
     input[(strlen(input))-1] =  '\0';
@@ -102,6 +103,6 @@ for(;;){
             }        
         else  printf("%s\n",output);
         for (int y = 0; y < 7; y++) output[y] = '\0';
-        counter++;
+                counter++;
 }
 }
