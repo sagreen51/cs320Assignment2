@@ -9,27 +9,27 @@ void main (int argc, char *argv[]){
 	char input[MAX_STR_SIZE];
 	char output[MAX_STR_SIZE];
     char *temp;
-    int length, numWords, charCounter, numChar, j;
+    int length, numWords, charCounter, numChar, j,r, k;
     int counter = 0;    
 
 	printf("Assignment #2-6, Steven Green, s.a.green51@gmail.com\n");
 
 for(;;){
-    //if (counter == 3) break;
 
      if(argc>2||argc == 1) {
         printf("ERROR! Program 6 accepts 1 command line argument.\n");
         return;
-    }
+    }  
     else if (argc == 2){
-        for (int r =1 ; r <10; r++) if (argv[1] == 'r') continue;
+           temp = argv[1];
+           if (temp[0] == '0') return;
+           else k = temp[0];
     }
-    else if (argv[1] == '0') return;
     else{
         printf("ERROR! Expected integer argument.\n");
         return;    
         }
-
+    if (counter == k) return;
     printf("> ");
     fgets(input,MAX_STR_SIZE,stdin);
     input[(strlen(input))-1] =  '\0';
@@ -37,6 +37,7 @@ for(;;){
     numWords = 0;
     charCounter = 0; 
     numChar = 0;
+    
     
     if(input[0] == 'q' ||input[0] == 'Q' )if(input[1] == 'U'||input[1] == 'u')if( input[2] == 'i'||input[2] == 'I')if(input[3] == 't'||input[3] == 'T' ) if (input[4] == '\0') break;
         
