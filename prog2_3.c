@@ -9,11 +9,12 @@ void main (){
 	char input[MAX_STR_SIZE];
 	char output[MAX_STR_SIZE];
     int length, numWords, charCounter, j;
+    int counter = 0;    
 
 	printf("Assignment #2-3, Steven Green, s.a.green51@gmail.com\n");
 
 for(;;){
-
+    if (counter == 4) break;
     printf("> ");
     fgets(input,MAX_STR_SIZE,stdin);
     input[(strlen(input))-1] =  '\0';
@@ -65,5 +66,6 @@ for(;;){
         else  printf("%s\n",output);
         output[0] = '\0';
         output[1] = '\0';
+        counter++;
 }
 }
