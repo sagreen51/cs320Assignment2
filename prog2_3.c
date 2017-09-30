@@ -54,11 +54,12 @@ for(;;){
            }
        }        
  
-        if (input[i] == '\n' || input[i] == '\0') {       
+        if (input[i] == '\n' || input[i] == '\0' ) {     
+            numWords = 3;  
             break;
             }
    }
-        if (numWords > 2) printf("ERROR! Incorrect number of tokens found\n");            
+        if (numWords > 2||numWords == 0) printf("ERROR! Incorrect number of tokens found\n");            
         else  printf("%s\n",output);
         output[0] = '\0';
         output[1] = '\0';
