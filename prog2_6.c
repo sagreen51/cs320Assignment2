@@ -12,7 +12,7 @@ void main (int argc, char *argv[]){
     int length, numWords, charCounter, numChar, j;
     int counter = 0;    
 
-	printf("Assignment #2-5, Steven Green, s.a.green51@gmail.com\n");
+	printf("Assignment #2-6, Steven Green, s.a.green51@gmail.com\n");
 
 for(;;){
    // if (counter == 4) break;
@@ -22,7 +22,7 @@ for(;;){
         return;
     }
     else if (argc == 2){
-        for (int r =0 ; r <10; r++) if (argv[1] == 'r') continue;
+        for (int r =1 ; r <10; r++) if (argv[1] == 'r') continue;
     }
     else{
         printf("ERROR! Expected integer argument.\n");
