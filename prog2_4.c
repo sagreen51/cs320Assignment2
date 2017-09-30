@@ -24,7 +24,7 @@ for(;;){
     charCounter = 0; 
     numChar = 0;
     
-    if(input[0] == 'Q' && input[1] == 'u' && input[2] == 'I' && input[3] == 't') {
+    if(input[0] == 'q' && input[1] == 'U' && input[2] == 'i' && input[3] == 'T') {
         numWords++;        
         break;
         }
@@ -73,7 +73,7 @@ for(;;){
             break;
             }
    }
-        if (numChar > 25 )printf("ERROR! Input string too long.\n");
+        if (numChar > 20 )printf("ERROR! Input string too long.\n");
         else if (numWords > 2||numWords == 0) printf("ERROR! Incorrect number of tokens found.\n");            
         else  printf("%s\n",output);
         output[0] = '\0';
