@@ -26,7 +26,7 @@ for(;;){
     
     if(input[0] == 'q' ||input[0] == 'Q' )if(input[1] == 'U'||input[1] == 'u')if( input[2] == 'i'||input[2] == 'I')if(input[3] == 't'||input[3] == 'T' ) break;
         
-    for (int p = 0; p <length; p++) if (input[p] != ' ') numChar++; 
+    for (int p = 0; p <length; p++) numChar++; 
 
     for (int i = 0; i < length; i++){  
            
