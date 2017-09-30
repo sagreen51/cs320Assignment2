@@ -14,7 +14,7 @@ void main (){
 
 for(;;){
 
-    printf(">");
+    printf("> ");
     fgets(input,MAX_STR_SIZE,stdin);
     input[(strlen(input))-1] =  '\0';
 	length = strlen(input);
