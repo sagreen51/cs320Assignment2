@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h> 
 
 #define MAX_STR_SIZE 265
 
 void main (){
 
 	char input[MAX_STR_SIZE];
-	char *temp;
 	char output[MAX_STR_SIZE];
     int length, numWords, charCounter, j;
 
@@ -24,7 +24,7 @@ for(;;){
         
         charCounter = 0;      
         
-        if(input[i] == ' ' && input[i+1] == '\0'){
+        if(input[0] == ' ' && input[1] == '\0'){
             numWords =3;
             break;
             } 
@@ -32,12 +32,13 @@ for(;;){
             charCounter++;            
             if (isdigit(input[i])){
                 if (isdigit(input[i+1])||input[i+1] == ' '){
+                    numWords++;
+                    strcat(output, "INT ");                 
                     j = i;                
                     while(input[j] != ' ')j++;
+                    if (j==length-1) break;
                     charCounter+=(j-i); 
                     i = j;
-                    numWords++;
-                    strcat(output, "INT ");
                 }
                 else{
                     numWords++;
