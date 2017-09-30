@@ -74,11 +74,15 @@ for(;;){
         if (numChar > 65 )printf("ERROR! Input string too long.\n");
         else if (numWords > 2||numWords == 0) printf("ERROR! Incorrect number of tokens found.\n");   
         else if (output[0] == 'I'&& output[4] != '\0' ) {
-            strcpy(output,"ERROR: Expected STR INT.");
+            strcpy(output,"ERROR! Expected STR INT.");
             printf("%s\n",output);
             }  
         else if (output[0] == 'I') {
-            strcpy(output,"ERROR: Expected STR.");
+            strcpy(output,"ERROR! Expected STR.");
+            printf("%s\n",output);
+            } 
+        else if (output[4] == 'S') {
+            strcpy(output,"ERROR! Expected STR INT.");
             printf("%s\n",output);
             }        
         else  printf("%s\n",output);
