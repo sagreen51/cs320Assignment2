@@ -31,7 +31,7 @@ for(;;){
         if (input[i] != ' '){
             charCounter++;            
             if (isdigit(input[i])){
-                if (isdigit(input[i+1])){
+                if (isdigit(input[i+1])||input[i+1] == ' '){
                     j = i;                
                     while(input[j] != ' ')j++;
                     charCounter+=(j-i); 
@@ -42,6 +42,7 @@ for(;;){
                 else{
                     numWords++;
                     strcat(output,"INT ");
+                    break;
                 }            
            }
            else { 
