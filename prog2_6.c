@@ -25,6 +25,7 @@ for(;;){
            temp = argv[1];
            if (temp[0] == '0') return;
            k =  temp[0];
+           if (temp[1] == '0') k = 58;
     }
     else{
         printf("ERROR! Expected integer argument.\n");
