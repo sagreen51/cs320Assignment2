@@ -17,7 +17,7 @@ void main (int argc, char *argv[]){
 for(;;){
    // if (counter == 4) break;
 
-     if(argc>2){
+     if(argc>2||argc == 1) {
         printf("ERROR! Program 6 accepts 1 command line argument.\n");
         return;
     }
