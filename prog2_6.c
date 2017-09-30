@@ -15,7 +15,7 @@ void main (int argc, char *argv[]){
 	printf("Assignment #2-6, Steven Green, s.a.green51@gmail.com\n");
 
 for(;;){
-    if (counter == 3) break;
+    //if (counter == 3) break;
 
      if(argc>2||argc == 1) {
         printf("ERROR! Program 6 accepts 1 command line argument.\n");
@@ -24,6 +24,7 @@ for(;;){
     else if (argc == 2){
         for (int r =1 ; r <10; r++) if (argv[1] == 'r') continue;
     }
+    else if (argv[1] == '0') return;
     else{
         printf("ERROR! Expected integer argument.\n");
         return;    
