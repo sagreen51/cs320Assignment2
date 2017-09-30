@@ -29,7 +29,7 @@ for(;;){
         break;
         }
 
-    for (int p = 0; p <length; p++) if (input[p] != ' ') numChar++; 
+    for (int p = 0; p <length; p++) numChar++; 
 
     for (int i = 0; i < length; i++){  
            
