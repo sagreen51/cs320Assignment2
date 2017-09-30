@@ -24,7 +24,7 @@ for(;;){
     charCounter = 0; 
     numChar = 0;
     
-    if(input[0] == 'q' && input[1] == 'U' && input[2] == 'i' && input[3] == 'T') {
+    if(input[0] == ('q'||'Q') && input[1] == ('u'||'U') && input[2] == ('i'||'I') && input[3] == ('t'||'T')) {
         numWords++;        
         break;
         }
